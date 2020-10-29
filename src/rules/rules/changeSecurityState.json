@@ -1,0 +1,36 @@
+{
+    "name": "If SHM changes to armAway, turn off devices.",
+    "actions": [
+      {
+        "if": {
+          "equals": {
+            "left": {
+              "location": {
+                "attribute": "Security"
+              }
+            },
+            "right": {
+              "string": "ArmedAway"
+            }
+          },
+          "then": [
+            {
+              "command": {
+                "devices": [
+                  "device 1 ID","device 2 ID","device 3 ID"
+                ],
+                "commands": [
+                  {
+                    "component": "main",
+                    "capability": "switch",
+                    "command": "off"
+                  }
+                ]
+              }
+            }
+          ],
+          "else": []
+        }
+      }
+    ]
+  }

@@ -1,0 +1,72 @@
+{
+    "name": "Notify Me When Door Left Open 2",
+    "actions": [
+      {
+        "if": {
+          "equals": {
+            "left": {
+              "device": {
+                "devices": [
+                  "your-contact-id"
+                ],
+                "component": "main",
+                "capability": "contactSensor",
+                "attribute": "contact"
+              }
+            },
+            "right": {
+              "string": "open"
+            }
+          },
+          "then": [
+              {
+                  "sleep": {
+                      "duration": {
+                          "value": {
+                              "integer": 30
+                          },
+                          "unit": "Second"
+                      }
+                  }
+              },
+                {
+                  "if": {
+                      "equals": {
+                      "left": {
+                          "device": {
+                          "devices": [
+                              "your-contact-id"
+                          ],
+                          "component": "main",
+                          "capability": "contactSensor",
+                          "attribute": "contact"
+                          }
+                      },
+                      "right": {
+                          "string": "open"
+                      }
+                  },
+                  "then": [
+                              {
+                                  "command": {
+                                      "devices": [
+                                          "your-light-id"
+                                      ],
+                                      "commands": [
+                                          {
+                                              "component": "main",
+                                              "capability": "switch",
+                                              "command": "on",
+                                              "arguments": []
+                                          }
+                                      ]
+                              }
+                          }
+                      ]
+                  }
+              }
+          ]
+        }
+      }
+    ]
+  }
