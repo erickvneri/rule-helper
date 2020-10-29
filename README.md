@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Rule Helper
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+The **_Rule Helper_** is an application intended to improve the understanding of the
+[Rules API](https://smartthings.developer.samsung.com/docs/api-ref/st-api.html#tag/rules).
+Also, it pretends to enhance the experience of developers and hobbyists while building
+Home Automation solutions.
 
-In the project directory, you can run:
+#### Some of the perks about building Rules are:
 
-### `yarn start`
+- Rules are based on the JSON format which is easy to understand.
+- Control flow statements and context managers are very intuitive.
+- Complexity of your Rule will rely on your creativity.
+- The flexibility to build different solutions to the same problem, etc.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### About the _Rule Helper_:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The **_Rule Helper_** is devided in **X** components.
 
-### `yarn test`
+- The **_Rule Templates_** component offers a series of Rules that covers
+multiple use cases with the current _Rules API_ features.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `yarn build`
+## Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Software requirements.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To deploy the _Rule Helper_, make sure you have the latest version of [NodeJS](https://nodejs.org)
+installed at your computer.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Additionally, this deployment tutorial uses [Yarn](https://yarnpkg.com) as package manager, however,
+you're not limited to it. You can still use [NPM](https://www.npmjs.com/) if you prefer.
 
-### `yarn eject`
+#### Setup
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Run the following command to install the app dependencies:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    yarn install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Deploy
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+To run the **_Rule Helper_** application execute the following command:
 
-## Learn More
+      yarn start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+After a few seconds, the application will be automatically deployed at your browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For more information about the **_Rules API_**, please visit our [Rules Documentation](https://smartthings.developer.samsung.com/docs/rules/overview.html) or share your questions at our [Community forums](https://community.smartthings.com/c/developer-programs).
