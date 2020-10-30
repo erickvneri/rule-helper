@@ -69,6 +69,18 @@ $input-shadow: none;
     border-width: 1px;
 }
 
+.button:hover {
+    background-color: #aeafac;
+    color: #faf5f8;
+    border-color: transparentize($color: #aeafac, $amount: 0);
+}
+
+.button:focus {
+    background-color: #aeafac;
+    color: #faf5f8;
+    border-color: transparentize($color: #aeafac, $amount: 0);
+}
+
 // React Ace Editor
 .example {
     margin-left: 7px;
