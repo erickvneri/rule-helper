@@ -1,4 +1,9 @@
 import { React, useState } from "react";
+
+import ButtonRow from "react-bootstrap/ButtonGroup";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-json";
 import "ace-builds/src-noconflict/theme-monokai";
@@ -11,7 +16,7 @@ function AdvancedTemplates() {
   return (
       <div className="App">
       <div className="container">
-      <h1 className="title">Rule Templates</h1>
+      <h1 className="title">Advanced Templates</h1>
         <div className="columns is-mobile">
           <div className="column is-one-third">
             <div className="left-menu">
@@ -34,6 +39,17 @@ function AdvancedTemplates() {
             </div>
           </div>
         </div>
+        <ButtonRow style={{width: "150%"}}>
+        <Link to="/">
+          <Button className="button" style={{width: "20%"}}>Home</Button>
+        </Link>
+        <Link to="/rule-examples">
+          <Button className="button" style={{width: "20%"}}>Rule Examples</Button>
+        </Link>
+        <Link to="/basic-templates">
+          <Button className="button" style={{width: "20%"}}>Basic Templates</Button>
+        </Link>
+      </ButtonRow>
       </div>
     </div>
   )
