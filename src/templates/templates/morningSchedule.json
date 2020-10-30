@@ -1,0 +1,44 @@
+{
+	"name": "If X location mode -> Every Mon to Fri -> Trigger command",
+	"actions": [
+		{
+			"if": {
+				"and": [
+					{
+						"location": {
+							"mode": "{{ locationModeId }}"
+						}
+					},
+					{
+						"every": {
+							"specific": {
+								"daysOfWeek": [
+									"Mon",
+									"Tue",
+									"Wed",
+									"Thu",
+									"Fri"
+								],
+								"reference": "Sunrise",
+								"offset": {
+									"value": "{{ integer }}",
+									"unit": "{{ Seconds | Hours | Minutes }}"
+								}
+							}
+						}
+					}
+				],
+				"then": [
+					{
+						"command": {
+							"devices": [
+								"{{ deviceId }}"
+							],
+							"commands": []
+						}
+					}
+				]
+			}
+		}
+	]
+}
