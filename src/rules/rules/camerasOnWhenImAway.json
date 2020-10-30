@@ -1,5 +1,5 @@
 {
-	"name": "If my location is set to away turn on camera",
+	"name": "If my location is set to X, turn on device",
 	"actions": [{
 		"if": {
 			"equals": {
@@ -9,13 +9,13 @@
 					}
 				},
 				"right": {
-					"string": "{{away_uuid}}"
+					"string": "{{ locationModeId }}"
 				}
 			},
 			"then": [{
 				"command": {
 					"devices": [
-						"{{camera_id}}"
+						"{{ deviceId }}"
 					],
 					"commands": [{
 						"component": "main",

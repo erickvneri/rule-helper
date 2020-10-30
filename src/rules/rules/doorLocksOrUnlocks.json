@@ -7,7 +7,7 @@
           "right": {
             "device": {
               "devices": [
-                "aa7ebc51-34d9-48c3-bfc9-57e7ce6a0526"
+                "{{ deviceId }}"
               ],
               "component": "main",
               "capability": "lock",
@@ -22,7 +22,7 @@
           {
             "command": {
               "devices": [
-                "f42e284d-fa01-4a09-a55e-adbdda632ac2"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
@@ -38,7 +38,7 @@
           {
             "command": {
               "devices": [
-                "f42e284d-fa01-4a09-a55e-adbdda632ac2"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {

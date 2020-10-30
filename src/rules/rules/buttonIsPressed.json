@@ -1,5 +1,5 @@
 {
-  "name": "If button is pushed turn on light.",
+  "name": "If button is pushed turn on device.",
   "actions": [
     {
       "if": {
@@ -7,7 +7,7 @@
           "right": {
             "device": {
               "devices": [
-                "{{ one_light_select }}"
+                "{{ deviceId }}"
               ],
               "component": "main",
               "capability": "button",
@@ -22,12 +22,12 @@
           {
             "command": {
               "devices": [
-                "{{light1}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "light",
+                  "capability": "switch",
                   "command": "on"
                 }
               ]
@@ -38,12 +38,12 @@
           {
             "command": {
               "devices": [
-                "{{light1}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "light",
+                  "capability": "switch",
                   "command": "off",
                   "arguments": []
                 }

@@ -7,7 +7,7 @@
           "right": {
             "device": {
               "devices": [
-                "{{switch1}}"
+                "{{ deviceId }}"
               ],
               "component": "main",
               "capability": "switch",
@@ -22,25 +22,26 @@
           {
             "command": {
               "devices": [
-                "{{light1}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "light",
+                  "capability": "switch",
                   "command": "on"
                 }
               ]
             }
-          }, {
+          },
+          {
             "command": {
               "devices": [
-                "{{light2}}", "{{light3}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "light",
+                  "capability": "switch",
                   "command": "off"
                 }
               ]
@@ -51,26 +52,27 @@
           {
             "command": {
               "devices": [
-                "{{light1}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "light",
+                  "capability": "switch",
                   "command": "off",
                   "arguments": []
                 }
               ]
             }
-          }, {
+          },
+          {
             "command": {
               "devices": [
-                "{{light2}}", "{{light3}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "light",
+                  "capability": "switch",
                   "command": "on",
                   "arguments": []
                 }

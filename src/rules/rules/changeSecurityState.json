@@ -1,5 +1,5 @@
 {
-    "name": "If SHM changes to armAway, turn off devices.",
+    "name": "If SHM changes to X, turn off device.",
     "actions": [
       {
         "if": {
@@ -10,14 +10,14 @@
               }
             },
             "right": {
-              "string": "ArmedAway"
+              "string": "{{ armState }}"
             }
           },
           "then": [
             {
               "command": {
                 "devices": [
-                  "device 1 ID","device 2 ID","device 3 ID"
+                  "{{ deviceId }}"
                 ],
                 "commands": [
                   {

@@ -7,7 +7,7 @@
           "left": {
             "device": {
               "devices": [
-                "4858b604-10e3-47ea-8432-d6418157bb13"
+                "{{ deviceId }}"
               ],
               "component": "main",
               "capability": "motionSensor",
@@ -22,7 +22,7 @@
           {
             "command": {
               "devices": [
-                "f42e284d-fa01-4a09-a55e-adbdda632ac2"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {

@@ -7,7 +7,7 @@
           "right": {
             "device": {
               "devices": [
-                "{{switch1}}"
+                "{{ deviceId }}"
               ],
               "component": "main",
               "capability": "switch",
@@ -22,7 +22,7 @@
           {
             "command": {
               "devices": [
-                "{{garageControl1}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {

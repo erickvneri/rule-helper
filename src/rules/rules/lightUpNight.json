@@ -7,7 +7,7 @@
           "right": {
             "device": {
               "devices": [
-                "{{illuminancesensor1}}"
+                "{{ deviceId }}"
               ],
               "component": "main",
               "capability": "illuminanceMeasurement",
@@ -17,17 +17,17 @@
           "left": {
             "integer": 30
           }
-        }, 
+        },
         "then": [
           {
             "command": {
               "devices": [
-                "{{light1}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "light",
+                  "capability": "switch",
                   "command": "on"
                 }
               ]
@@ -38,12 +38,12 @@
           {
             "command": {
               "devices": [
-                "{{light1}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "light",
+                  "capability": "switch",
                   "command": "off"
                 }
               ]

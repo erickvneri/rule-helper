@@ -7,7 +7,7 @@
           "left": {
             "device": {
               "devices": [
-                "{{motion1}}"
+                "{{ deviceId }}"
               ],
               "component": "main",
               "capability": "motionSensor",
@@ -22,34 +22,36 @@
           {
             "command": {
               "devices": [
-                "{{light1}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "light",
+                  "capability": "switch",
                   "command": "on"
                 }
               ]
             }
-          },  {
-	        "sleep": {
-	           "duration": {
-	            "value": {
-	              "integer": 60
-	            },
-	            "unit": "Second"
-	          }
-	        }
-	      }, {
+          },
+          {
+            "sleep": {
+              "duration": {
+                "value": {
+                  "integer": 60
+                },
+                "unit": "Second"
+              }
+            }
+          },
+          {
             "command": {
               "devices": [
-                "{{light1}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "light",
+                  "capability": "switch",
                   "command": "off"
                 }
               ]

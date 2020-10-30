@@ -7,7 +7,7 @@
           "right": {
             "device": {
               "devices": [
-                "{{presence1}}"
+                "{{ deviceId }}"
               ],
               "component": "main",
               "capability": "presenceSensor",
@@ -22,7 +22,7 @@
           {
             "command": {
               "devices": [
-                "{{lock1}}", "{{lock2}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {

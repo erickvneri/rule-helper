@@ -1,5 +1,5 @@
 {
-  "name": "If no motion is detected, wait 1 minute and then turn off light",
+  "name": "If no motion, wait 1 minute and then turn off light",
   "actions": [
     {
       "if": {
@@ -7,7 +7,7 @@
           "left": {
             "device": {
               "devices": [
-                "{{motion1}}"
+                "{{ deviceId }}"
               ],
               "component": "main",
               "capability": "motionSensor",
@@ -17,7 +17,7 @@
           "right": {
             "string": "inactive"
           }
-        }, 
+        },
         "then": [
           {
 	        "sleep": {
@@ -31,12 +31,12 @@
 	      }, {
             "command": {
               "devices": [
-                "{{light1}}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
-                  "capability": "light",
+                  "capability": "switch",
                   "command": "on"
                 }
               ]
