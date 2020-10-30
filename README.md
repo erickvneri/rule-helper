@@ -16,7 +16,7 @@ Home Automation solutions.
 
 #### About the _Rule Helper_:
 
-The **_Rule Helper_** is devided in **{{ TBD }}** components.
+The **_Rule Helper_** is devided in 3 components.
 
 - The **_Rule Examples_** component offers a series of Rules that cover
 multiple use cases with the current _Rules API_ features.
