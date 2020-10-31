@@ -1,0 +1,28 @@
+{
+	"name": "Daylight Schedule",
+	"actions": [
+		{
+			"if": {
+				"between": {
+					"value": {
+						"time": {
+							"reference": "Now"
+						}
+					},
+					"start": {
+						"time": {
+							"reference": "Sunrise"
+						}
+					},
+					"end": {
+						"time": {
+							"reference": "Sunset"
+						}
+					}
+				},
+				"then": [],
+				"else": []
+			}
+		}
+	]
+}
