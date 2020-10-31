@@ -1,28 +1,28 @@
 {
-  "name": "If motion detected, turn on light, then turn off after 1 minute if no motion",
+  "name": "If temperature is 72°F or higher, turn on switch, else turn switch off",
   "actions": [
     {
       "if": {
-        "equals": {
-          "left": {
+        "greaterThan": {
+          "right": {
             "device": {
               "devices": [
                 "{{ deviceId }}"
               ],
               "component": "main",
-              "capability": "motionSensor",
-              "attribute": "motion"
+              "capability": "temperatureMeasurement",
+              "attribute": "temperature"
             }
           },
-          "right": {
-            "string": "active"
+          "left": {
+            "integer": 70
           }
         },
         "then": [
           {
             "command": {
               "devices": [
-                "{{ deviceId }}"
+              "{{ deviceId }}"
               ],
               "commands": [
                 {
@@ -32,27 +32,20 @@
                 }
               ]
             }
-          },
-          {
-            "sleep": {
-              "duration": {
-                "value": {
-                  "integer": 60
-                },
-                "unit": "Second"
-              }
-            }
-          },
+          }
+        ],
+        "else": [
           {
             "command": {
               "devices": [
-                "{{ deviceId }}"
+              "{{ deviceId }}"
               ],
               "commands": [
                 {
                   "component": "main",
                   "capability": "switch",
-                  "command": "off"
+                  "command": "off",
+                  "arguments": []
                 }
               ]
             }

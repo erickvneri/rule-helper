@@ -1,22 +1,27 @@
 import { React, useState } from "react";
+
+import ButtonRow from "react-bootstrap/ButtonGroup";
+import { Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
 import AceEditor from "react-ace";
 import "ace-builds/src-noconflict/mode-json";
 import "ace-builds/src-noconflict/theme-monokai";
 import "../App.scss";
 // Rules
-import Templates from "../rules/Templates";
+import Examples from "../templates/ruleExamples";
 
-function RuleTemplates() {
+function RuleExamples() {
   const [rule, setRule] = useState("{}");
   return (
       <div className="App">
       <div className="container">
-      <h1 className="title">Rule Helper</h1>
+      <h1 className="title">Rule Examples</h1>
         <div className="columns is-mobile">
           <div className="column is-one-third">
             <div className="left-menu">
               <div className="block">
-                {Templates.map((rule) => {
+                {Examples.map((rule) => {
                   return <button className="button" onClick={() => setRule(JSON.stringify(rule.value, null, 2))}>{rule.label}</button>
                 })}
               </div>
@@ -34,9 +39,20 @@ function RuleTemplates() {
             </div>
           </div>
         </div>
+      <ButtonRow style={{width: "150%"}}>
+        <Link to="/">
+          <Button className="button" style={{width: "20%"}}>Home</Button>
+        </Link>
+        <Link to="/basic-templates">
+          <Button className="button" style={{width: "20%"}}>Basic Templates</Button>
+        </Link>
+        <Link to="/advanced-templates">
+          <Button className="button" style={{width: "20%"}}>Advanced Templates</Button>
+        </Link>
+      </ButtonRow>
       </div>
     </div>
   );
 };
 
-export default RuleTemplates;
+export default RuleExamples;

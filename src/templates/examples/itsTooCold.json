@@ -1,9 +1,9 @@
 {
-  "name": "If temperature is 72°F or higher, turn on switch, else turn switch off",
+  "name": "If temperature is 72°F or less, turn on switch, else turn switch off",
   "actions": [
     {
       "if": {
-        "greater_than": {
+        "lessThan": {
           "right": {
             "device": {
               "devices": [
@@ -15,14 +15,14 @@
             }
           },
           "left": {
-            "integer": 70
+            "integer": 72
           }
         },
         "then": [
           {
             "command": {
               "devices": [
-              "{{ deviceId }}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {
@@ -38,7 +38,7 @@
           {
             "command": {
               "devices": [
-              "{{ deviceId }}"
+                "{{ deviceId }}"
               ],
               "commands": [
                 {

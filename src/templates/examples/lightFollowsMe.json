@@ -1,21 +1,21 @@
 {
-  "name": "If temperature is 72°F or less, turn on switch, else turn switch off",
+  "name": "If motion, turn on - wait 1 minute - if no motion, turn off",
   "actions": [
     {
       "if": {
-        "less_than": {
-          "right": {
+        "equals": {
+          "left": {
             "device": {
               "devices": [
                 "{{ deviceId }}"
               ],
               "component": "main",
-              "capability": "temperatureMeasurement",
-              "attribute": "temperature"
+              "capability": "motionSensor",
+              "attribute": "motion"
             }
           },
-          "left": {
-            "integer": 72
+          "right": {
+            "string": "active"
           }
         },
         "then": [
@@ -32,9 +32,17 @@
                 }
               ]
             }
-          }
-        ],
-        "else": [
+          },
+          {
+            "sleep": {
+              "duration": {
+                "value": {
+                  "integer": 60
+                },
+                "unit": "Second"
+              }
+            }
+          },
           {
             "command": {
               "devices": [
@@ -44,8 +52,7 @@
                 {
                   "component": "main",
                   "capability": "switch",
-                  "command": "off",
-                  "arguments": []
+                  "command": "off"
                 }
               ]
             }

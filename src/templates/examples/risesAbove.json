@@ -1,5 +1,5 @@
 {
-	"name": "If dimmer Rises Above 75%, and location mode is X, then turn on devices",
+	"name": "If dimmer Rises Above 75%, and location mode is X, turn on",
 	"actions": [
 		{
 			"if": {

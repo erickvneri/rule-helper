@@ -16,10 +16,17 @@ Home Automation solutions.
 
 #### About the _Rule Helper_:
 
-The **_Rule Helper_** is devided in **X** components.
+The **_Rule Helper_** is devided in 3 components.
 
-- The **_Rule Templates_** component offers a series of Rules that covers
+- The **_Rule Examples_** component offers a series of Rules that cover
 multiple use cases with the current _Rules API_ features.
+- The **_Basic Templates_** component provides an introduction to different
+conditionals to create Rules.
+- The **_Advanced Templates_** component combines elements presented by _Basic Templates_
+and illustrates the flexibility of nested conditionals and concatenated actions.
+
+_**Note**:  For futher implementation of templates, please follow the
+[Rules API](https://smartthings.developer.samsung.com/docs/api-ref/st-api.html#operation/createRule) reference._
 
 ---
 
