@@ -12,7 +12,7 @@ function Home() {
 
       <p>   The <em>Rule Helper</em> is an application intended to improve the understanding of the Rules API. Also, it pretends to
       enhance the experience of developers and hobbyists while building Home Automation solutions.</p>
-      <br></br>
+      <br />
       <p>
         <strong>Some of the perks about building Rules are:</strong>
       </p>
@@ -20,9 +20,9 @@ function Home() {
         <li>Control flow statements and context managers are very intuitive.</li>
         <li>Complexity of your Rule will rely on your creativity.</li>
         <li>The flexibility to build different solutions to the same problem, etc.</li>
-      <br></br>
+      <br />
       <p>
-        <strong>About the Rule Helper:</strong>
+        <strong>About the Rule Helper:</strong><br />
         The <em>Rule Helper</em> is devided in 3 components.
       </p>
       <li>The <strong>Rule Examples</strong> component offers a series of Rules that cover multiple use cases with the current Rules API features.</li>
