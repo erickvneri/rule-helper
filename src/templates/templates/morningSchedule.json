@@ -1,14 +1,9 @@
 {
-	"name": "If X location mode -> Every Mon to Fri -> Trigger command",
+	"name": "Every Mon to Fri -> If X location mode -> Trigger command",
 	"actions": [
 		{
 			"if": {
 				"and": [
-					{
-						"location": {
-							"mode": "{{ locationModeId }}"
-						}
-					},
 					{
 						"every": {
 							"specific": {
@@ -21,10 +16,15 @@
 								],
 								"reference": "Sunrise",
 								"offset": {
-									"value": "{{ integer }}",
-									"unit": "{{ Seconds | Hours | Minutes }}"
+									"value": "{{ number }}",
+									"unit": "{{ timeUnit }}"
 								}
 							}
+						}
+					},
+					{
+						"location": {
+							"mode": "{{ locationModeId }}"
 						}
 					}
 				],

@@ -15,8 +15,9 @@ import risesAbove from "./templates/risesAbove.json";
 import risesToOrAbove from "./templates/risesToOrAbove.json";
 import setLocationMode from "./templates/setLocationMode.json";
 // Advanced templates
-import daylightSchedule from "./templates/daylightSchedule.json";
-import sleep from "./templates/sleep.json";
+import daylightRoutine from "./templates/daylightRoutine.json";
+import daylightRoutineDelayed from "./templates/daylightRoutineDelayed.json";
+import delayedCommand from "./templates/delayedCommand.json";
 import nestedIf from "./templates/nestedIf.json";
 import morningSchedule from "./templates/morningSchedule.json";
 
@@ -40,10 +41,11 @@ const BasicTemp = [
 ];
 
 const AdvancedTemp = [
-  { label: "Daylight Schedule", value: daylightSchedule },
+  { label: "Daylight Routine", value: daylightRoutine },
+  { label: "Daylight Routine Delayed", value: daylightRoutineDelayed },
+  { label: "Delayed command", value: delayedCommand },
   { label: "Nested If Condition", value: nestedIf },
-  { label: "Morning Schedule", value: morningSchedule },
-  { label: "Sleep", value: sleep },
+  { label: "Morning Routine At Location", value: morningSchedule },
 ];
 
 

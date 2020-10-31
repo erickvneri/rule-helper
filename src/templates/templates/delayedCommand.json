@@ -11,7 +11,7 @@
                     {
                         "sleep": {
                             "duration": "{{ integer }}",
-                            "unit": "{{ Second | Minute | Hour | Day | Week | Month | Year }}"
+                            "unit": "{{ timeUnit }}"
                         }
                     },
                     {
