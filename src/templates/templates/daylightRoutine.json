@@ -4,43 +4,45 @@
 		{
 			"every": {
 				"interval": {
-					"value": "{{ number }}",
+					"value": {
+						"integer": "{{ timeValue }}"
+					},
 					"unit": "{{ timeUnit }}"
-				}
-			},
-			"actions": [
-				{
-					"if": {
-						"between": {
-							"value": {
-								"time": {
-									"reference": "Now"
+				},
+				"actions": [
+					{
+						"if": {
+							"between": {
+								"value": {
+									"time": {
+										"reference": "Now"
+									}
+								},
+								"start": {
+									"time": {
+										"reference": "Sunrise"
+									}
+								},
+								"end": {
+									"time": {
+										"reference": "Sunset"
+									}
 								}
 							},
-							"start": {
-								"time": {
-									"reference": "Sunrise"
+							"then": [
+								{
+									"command": {
+										"devices": [
+											"{{ deviceId }}"
+										],
+										"commands": []
+									}
 								}
-							},
-							"end": {
-								"time": {
-									"reference": "Sunset"
-								}
-							}
-						},
-						"then": [
-							{
-								"command": {
-									"devices": [
-										"{{ deviceId }}"
-									],
-									"commands": []
-								}
-							}
-						]
+							]
+						}
 					}
-				}
-			]
+				]
+			}
 		}
 	]
 }

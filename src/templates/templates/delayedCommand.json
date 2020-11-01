@@ -10,8 +10,12 @@
                 "then": [
                     {
                         "sleep": {
-                            "duration": "{{ integer }}",
-                            "unit": "{{ timeUnit }}"
+                            "duration": {
+                                "value": {
+                                    "integer": "{{ timeValue }}"
+                                },
+                                "unit": "{{ timeUnit }}"
+                            }
                         }
                     },
                     {
