@@ -33,13 +33,13 @@ function Home() {
       </form>
       <ButtonRow style={{width: "150%"}}>
         <Link to="/rule-examples">
-          <Button className="button" style={{width: "20%"}}>Rule Examples</Button>
+          <Button className="button" style={{width: "17%", marginRight: "15px"}}>Rule Examples</Button>
         </Link>
         <Link to="/basic-templates">
-          <Button className="button" style={{width: "20%"}}>Basic Templates</Button>
+          <Button className="button" style={{width: "17%", marginRight: "15px"}}>Basic Templates</Button>
         </Link>
         <Link to="/advanced-templates">
-          <Button className="button" style={{width: "20%"}}>Advanced Templates</Button>
+          <Button className="button" style={{width: "17%", marginRight: "15px"}}>Advanced Templates</Button>
         </Link>
       </ButtonRow>
     </div>

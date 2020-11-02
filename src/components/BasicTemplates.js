@@ -40,18 +40,18 @@ function BasicTemplates() {
             </div>
           </div>
         </div>
-        <ButtonRow style={{width: "150%"}}>
-        <Link to="/">
-          <Button className="button" style={{width: "17%"}}>Home</Button>
-        </Link>
-        <Link to="/rule-examples">
-          <Button className="button" style={{width: "17%"}}>Rule Examples</Button>
-        </Link>
-        <Link to="/advanced-templates">
-          <Button className="button" style={{width: "17%"}}>Advanced Templates</Button>
-        </Link>
-      </ButtonRow>
-      </div>
+	<ButtonRow style={{width: "150%"}}>
+	  <Link to="/">
+	    <Button className="button" style={{width: "17%", marginRight: "15px"}}>Home</Button>
+	  </Link>
+	  <Link to="/rule-examples">
+	    <Button className="button" style={{width: "17%", marginRight: "15px"}}>Rule Examples</Button>
+	  </Link>
+	  <Link to="/advanced-templates">
+	   <Button className="button" style={{width: "17%", marginRight: "15px"}}>Advanced templates</Button>
+	  </Link>
+	</ButtonRow>
+        </div>
     </div>
   );
 };

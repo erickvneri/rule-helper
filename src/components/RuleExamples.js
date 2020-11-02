@@ -40,17 +40,17 @@ function RuleExamples() {
             </div>
           </div>
         </div>
-      <ButtonRow style={{width: "150%"}}>
-        <Link to="/">
-          <Button className="button" style={{width: "17%"}}>Home</Button>
-        </Link>
-        <Link to="/basic-templates">
-          <Button className="button" style={{width: "17%"}}>Basic Templates</Button>
-        </Link>
-        <Link to="/advanced-templates">
-          <Button className="button" style={{width: "17%"}}>Advanced Templates</Button>
-        </Link>
-      </ButtonRow>
+	  <ButtonRow style={{width: "150%"}}>
+	    <Link to="/">
+	      <Button className="button" style={{width: "17%", marginRight: "15px"}}>Home</Button>
+	    </Link>
+	    <Link to="/basic-templates">
+	      <Button className="button" style={{width: "17%", marginRight: "15px"}}>Basic Templates</Button>
+	    </Link>
+	    <Link to="/advanced-templates">
+	      <Button className="button" style={{width: "17%", marginRight: "15px"}}>Advanced Templates</Button>
+	    </Link>
+	  </ButtonRow>
       </div>
     </div>
   );
