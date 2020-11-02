@@ -35,19 +35,20 @@ function AdvancedTemplates() {
               name="textarea"
               value={rule}
               editorProps={{ $blockScrolling: true }}
+	      setOptions={{ fontSize: 13 }}
               />
             </div>
           </div>
         </div>
         <ButtonRow style={{width: "150%"}}>
         <Link to="/">
-          <Button className="button" style={{width: "20%"}}>Home</Button>
+          <Button className="button" style={{width: "17%"}}>Home</Button>
         </Link>
         <Link to="/rule-examples">
-          <Button className="button" style={{width: "20%"}}>Rule Examples</Button>
+          <Button className="button" style={{width: "17%"}}>Rule Examples</Button>
         </Link>
         <Link to="/basic-templates">
-          <Button className="button" style={{width: "20%"}}>Basic Templates</Button>
+          <Button className="button" style={{width: "17%"}}>Basic Templates</Button>
         </Link>
       </ButtonRow>
       </div>

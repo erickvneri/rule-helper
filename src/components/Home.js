@@ -9,7 +9,7 @@ function Home() {
   return (
     <div className="container">
       <h1 className="title">Rule Helper</h1>
-
+      <form className="text">
       <p>   The <em>Rule Helper</em> is an application intended to improve the understanding of the Rules API. Also, it pretends to
       enhance the experience of developers and hobbyists while building Home Automation solutions.</p>
       <br />
@@ -30,7 +30,7 @@ function Home() {
       <li>The <strong>Advanced Templates</strong> component combines elements presented by Basic Templates and illustrates the
       flexibility of nested conditionals and concatenated actions.</li>
       <br></br>
-
+      </form>
       <ButtonRow style={{width: "150%"}}>
         <Link to="/rule-examples">
           <Button className="button" style={{width: "20%"}}>Rule Examples</Button>
