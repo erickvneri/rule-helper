@@ -40,22 +40,11 @@ $input-shadow: none;
 
 // Style
 .container {
-    max-width: 960px;
-    max-width: 1060px;
-    height: 600px;
+    width: 850px;
+    height: 560px;
     margin-top: 5%;
     margin-left: 25%;
     align-self: center;
-}
-
-.text {
-    font-size: 18px;
-    width: 1000px;
-}
-
-.example {
-	width: 650px;
-	height: 650px;
 }
 
 .title {
@@ -104,7 +93,7 @@ $input-shadow: none;
 
 // React Ace Editor
 .example {
-    margin-left: 12px;
+    margin-left: 7px;
     margin-top: 2px;
 }
 
