@@ -32,7 +32,7 @@ _**Note**:  For further information about installing and managing Rules, visit t
 #### Installation
 This tutorial uses Yarn as package manager. However, you can still use NPM if you prefer. Navigate to your Rule Helper and run the following command to install the app dependencies.
 
-    `cd Rule-Helper
+    `cd rule-helper
     yarn install`
 
 #### Build
