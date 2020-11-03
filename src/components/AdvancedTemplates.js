@@ -30,25 +30,27 @@ function AdvancedTemplates() {
           <div className="column">
             <div id="example">
               <AceEditor
+	      height="600px"
+	      width="650px"
               mode="json"
               theme="monokai"
               name="textarea"
               value={rule}
               editorProps={{ $blockScrolling: true }}
-	      setOptions={{ fontSize: 13 }}
+	      setOptions={{ fontSize: 15 }}
               />
             </div>
           </div>
         </div>
         <ButtonRow style={{width: "150%"}}>
         <Link to="/">
-          <Button className="button" style={{width: "17%", marginRight: "15px"}}>Home</Button>
+          <Button className="button" style={{width: "22%"}}>Home</Button>
         </Link>
         <Link to="/rule-examples">
-          <Button className="button" style={{width: "17%", marginRight: "15px"}}>Rule Examples</Button>
+          <Button className="button" style={{width: "22%"}}>Rule Examples</Button>
         </Link>
         <Link to="/basic-templates">
-          <Button className="button" style={{width: "17%", marginRight: "15px"}}>Basic Templates</Button>
+          <Button className="button" style={{width: "22%"}}>Basic Templates</Button>
         </Link>
       </ButtonRow>
       </div>

@@ -29,29 +29,31 @@ function BasicTemplates() {
           </div>
           <div className="column">
             <div id="example">
-            <AceEditor
+              <AceEditor
+	      height="600px"
+	      width="650px"
               mode="json"
               theme="monokai"
               name="textarea"
               value={rule}
               editorProps={{ $blockScrolling: true }}
-	      setOptions={{ fontSize: 13 }}
+	      setOptions={{ fontSize: 15 }}
               />
             </div>
           </div>
         </div>
-	<ButtonRow style={{width: "150%"}}>
-	  <Link to="/">
-	    <Button className="button" style={{width: "17%", marginRight: "15px"}}>Home</Button>
-	  </Link>
-	  <Link to="/rule-examples">
-	    <Button className="button" style={{width: "17%", marginRight: "15px"}}>Rule Examples</Button>
-	  </Link>
-	  <Link to="/advanced-templates">
-	   <Button className="button" style={{width: "17%", marginRight: "15px"}}>Advanced templates</Button>
-	  </Link>
-	</ButtonRow>
-        </div>
+        <ButtonRow style={{width: "150%"}}>
+        <Link to="/">
+          <Button className="button" style={{width: "22%"}}>Home</Button>
+        </Link>
+        <Link to="/rule-examples">
+          <Button className="button" style={{width: "22%"}}>Rule Examples</Button>
+        </Link>
+        <Link to="/advanced-templates">
+          <Button className="button" style={{width: "22%"}}>Advanced Templates</Button>
+        </Link>
+      </ButtonRow>
+      </div>
     </div>
   );
 };

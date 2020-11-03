@@ -28,6 +28,7 @@
                                             "{{ deviceId }}"
                                         ],
                                         "component": "{{ componentId }}",
+                                        "capability": "{{ capabilityId }}",
                                         "attribute": "{{ attributeName }}"
                                     }
                                 },
@@ -39,7 +40,9 @@
                                 {
                                     "sleep": {
                                         "duration": {
-                                            "value": "{{ number }}",
+                                            "value": {
+                                                "integer": "{{ timeValue }}"
+                                            },
                                             "unit": "{{ timeUnit }}"
                                         }
                                     }
