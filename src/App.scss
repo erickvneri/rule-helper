@@ -43,7 +43,7 @@ $input-shadow: none;
     width: 850px;
     height: 560px;
     margin-top: 5%;
-    margin-left: 30%;
+    margin-left: 25%;
     align-self: center;
 }
 
@@ -52,32 +52,43 @@ $input-shadow: none;
     align-content: center;
 }
 
+.text{
+    font-size: 17px;
+}
+
 .left-menu {
     padding-top: 2px;
     padding-left: 2px;
     width: 329px;
-    height: 500px;
+    height: 600px;
     overflow-y: auto;
+    direction: rtl;
     background-color: $brown;
+}
+
+.block {
+    padding-right: 5px;
 }
 
 .button {
     margin: 3px;
-    margin-left: 13px;
+    margin-left: 30px;
     width: 90%;
     border-width: 1px;
 }
 
 .button:hover {
-    background-color: #aeafac;
+    background-color: #896f84;
     color: #faf5f8;
-    border-color: transparentize($color: #aeafac, $amount: 0);
+    border-color: transparentize($color: #896f84, $amount: 0);
+
 }
 
 .button:focus {
-    background-color: #aeafac;
+    background-color: #896f84;
     color: #faf5f8;
-    border-color: transparentize($color: #aeafac, $amount: 0);
+    border-color: transparentize($color: #896f84, $amount: 0);
+
 }
 
 // React Ace Editor
@@ -87,8 +98,6 @@ $input-shadow: none;
 }
 
 #textarea {
-    width: 472px;
     margin-left: 37px;
-    font-size: 14;
 }
 
