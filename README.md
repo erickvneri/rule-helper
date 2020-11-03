@@ -1,58 +1,46 @@
 # Rule Helper
 
-## Overview
+## Introduction
+If you are automating Devices and Connected Services on the SmartThings Cloud and do not want to create a standalone application, creating an _Automations_ is a great place to start. [Rules](https://smartthings.developer.samsung.com/docs/api-ref/st-api.html#tag/rules) are a versatile tool, enabling you to create a wide range of Automations that operate on the SmartThings Platform.
 
-The **_Rule Helper_** is an application intended to improve the understanding of the
-[Rules API](https://smartthings.developer.samsung.com/docs/api-ref/st-api.html#tag/rules).
-Also, it pretends to enhance the experience of developers and hobbyists while building
-Home Automation solutions.
+A rule is defined in JSON format and contains a name, install source, and a list of actions. A single rule can be used to contain multiple actions within it. These actions represent a tree that is evaluated when the rule is triggered. This **_Rule Helper_** is a lightweight, local React application to demonstrate the structure and syntax of Rules so that you can begin creating your own.
 
-#### Some of the perks about building Rules are:
+#### Benefits of Rules
 
-- Rules are based on the JSON format which is easy to understand.
+- Based on the JSON format, which is easy to understand and dynamically create.
 - Control flow statements and context managers are very intuitive.
-- Complexity of your Rule will rely on your creativity.
-- The flexibility to build different solutions to the same problem, etc.
+- Rules can be as complex as your creativity will allow.
 
 #### About the _Rule Helper_:
 
-The **_Rule Helper_** is devided in 3 components.
+This demonstration is divided in 3 components.
 
-- The **_Rule Examples_** component offers a series of Rules that cover
-multiple use cases with the current _Rules API_ features.
-- The **_Basic Templates_** component provides an introduction to different
-conditionals to create Rules.
-- The **_Advanced Templates_** component combines elements presented by _Basic Templates_
-and illustrates the flexibility of nested conditionals and concatenated actions.
+- **_Rule Examples_** - Templates of the most popular legacy Groovy SmartApps converted to the new Rules JSON format.
+- **_Basic Templates_** - Sample for different Actions using the various Conditions, Operations, and Operands you can use in a Rule.
+- **_Advanced Templates_** Combines elements presented by _Basic Templates_ to demonstrate the flexibility of nested Conditions and concatenated Actions.
 
-_**Note**:  For futher implementation of templates, please follow the
-[Rules API](https://smartthings.developer.samsung.com/docs/api-ref/st-api.html#operation/createRule) reference._
+_**Note**:  For further information about installing and managing Rules, visit the [Rules API reference](https://smartthings.developer.samsung.com/docs/api-ref/st-api.html#operation/createRule)_.
 
 ---
 
 ## Deployment
 
-#### Software requirements.
+#### Prerequisites.
+1. Latest version of [NodeJS](https://nodejs.org) installed on your computer.
+2. [Yarn](https://yarnpkg.com) or [NPM](https://www.npmjs.com/)
 
-To deploy the _Rule Helper_, make sure you have the latest version of [NodeJS](https://nodejs.org)
-installed at your computer.
+#### Installation
+This tutorial uses Yarn as package manager. However, you can still use NPM if you prefer. Navigate to your Rule Helper and run the following command to install the app dependencies.
 
-Additionally, this deployment tutorial uses [Yarn](https://yarnpkg.com) as package manager, however,
-you're not limited to it. You can still use [NPM](https://www.npmjs.com/) if you prefer.
+    `cd Rule-Helper
+    yarn install`
 
-#### Setup
+#### Build
+To run  Rule Helper application execute the following command:
 
-Run the following command to install the app dependencies:
+      `yarn start`
 
-    yarn install
-
-#### Deploy
-
-To run the **_Rule Helper_** application execute the following command:
-
-      yarn start
-
-After a few seconds, the application will be automatically deployed at your browser.
+After a few seconds, the React application will be automatically deployed at your browser.
 
 ---
 
