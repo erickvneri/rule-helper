@@ -14,7 +14,7 @@ import Examples from "../templates/ruleExamples";
 function RuleExamples() {
   const [rule, setRule] = useState("{}");
   return (
-      <div className="App">
+    <div className="App">
       <div className="container">
       <h1 className="title">Rule Examples</h1>
         <div className="columns is-mobile">

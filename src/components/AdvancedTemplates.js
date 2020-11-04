@@ -14,7 +14,7 @@ import { AdvancedTemp } from "../templates/ruleTemplates";
 function AdvancedTemplates() {
   const [rule, setRule] = useState("{}");
   return (
-      <div className="App">
+    <div className="App">
       <div className="container">
       <h1 className="title">Advanced Templates</h1>
         <div className="columns is-mobile">
