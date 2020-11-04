@@ -14,7 +14,7 @@ import { BasicTemp } from "../templates/ruleTemplates";
 function BasicTemplates() {
   const [rule, setRule] = useState("{}");
   return (
-      <div className="App">
+    <div className="App">
       <div className="container">
       <h1 className="title">Basic Templates</h1>
         <div className="columns is-mobile">
